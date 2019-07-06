@@ -1,0 +1,12 @@
+[
+    {
+        "name": "The End",
+        "address": "2219 Elliston Pl, Nashville, TN 37203",
+        "capacity": 2000
+    },
+    {
+        "name": "The Basement",
+        "address": "917 Woodland St, Nashville, TN 37206",
+        "capacity": 3000
+    }
+]

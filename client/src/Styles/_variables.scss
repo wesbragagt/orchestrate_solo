@@ -1,0 +1,18 @@
+// Colors
+$darkPrimary: #17223b;
+$primary: #263859;
+$lightPrimary: lighten($primary, 10);
+$bright: #588ddb;
+$secondary: #ff6768;
+$terciary: #6b778d;
+
+$white: #ffffff;
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,300i,400,400i,500&display=swap");
+
+@import "./modularscale-sass/stylesheets/modularscale";
+
+$headerFontFamily: "Montserrat", sans-serif;
+$bodyFontFamily: "Roboto", sans-serif;
+

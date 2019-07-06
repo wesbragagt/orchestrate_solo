@@ -1,0 +1,11 @@
+.dashbtn {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 1rem;
+    border: solid 2px orange;
+
+    button {
+        text-align: center;
+    }
+}

@@ -1,0 +1,61 @@
+@import '../../../../Styles/_variables.scss';
+
+.calendarNavigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  button {
+    border-radius: 0px;
+    border: none;
+    font-size: .8em;
+    padding: .5em 1em;
+    cursor: pointer;
+    background: $lightPrimary;
+    color: white;
+    border: solid 1px $darkPrimary;
+
+    &:hover {
+      background: $bright;
+    }
+
+    &:active {
+      background: $primary;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .firstButton {
+    border-radius: 8px 0 0 8px;
+    border-right: none;
+  }
+
+  .lastButton {
+    border-radius: 0 8px 8px 0;
+    border-left: none;
+  }
+
+  
+  .calendarNavButtons, .calendarViews {
+    flex: 1;
+    min-width: 20%;
+  }
+
+  .calendarNavButtons {
+    text-align: left;
+    
+    button {
+      padding: .5em 1.2em;
+    }
+
+    .prevMonth {
+      border-radius: 0
+    }
+    
+  }
+
+  
+}

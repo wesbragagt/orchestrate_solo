@@ -1,0 +1,102 @@
+@import "../../Styles/variables";
+
+.topNav {
+  height: 100px;
+  background-color: darken($darkPrimary, 2);
+  border-bottom: solid 1px darken($darkPrimary, 3);
+  display: flex;
+  overflow: hidden;
+
+  // * {
+  //   display: flex;
+  //   align-content: center;
+  // }
+
+  .navContainer {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+    align-items: center;
+
+    .loginLink {
+      //flex: 1;
+      //display: flex;
+      max-width: 160px;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 20px 40px;
+
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+
+  &.smallScreen {
+    height: 60px;
+    padding: 0;
+
+    .navContainer {
+      height: 60px;
+
+      .hamburguesa {
+        width: 20vw;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $primary;
+        }
+
+        .hamb {
+          flex: 1;
+          height: 25px;
+          max-width: 30px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .hambLine {
+            background: white;
+            height: 2px;
+            border-radius: 1px;
+          }
+        }
+
+
+      }
+
+      .logo {
+        height: 60px;
+        width: 60vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: darken($darkPrimary, 4);
+        border-bottom: solid 1px darken($darkPrimary, 3);
+
+        a {
+          height: 60px;
+
+          svg {
+            margin: 0 auto;
+            width: 100%;
+            height: 50px;
+            max-width: 100%;
+          }
+        }
+      }
+
+      .loginLink {
+        width: 20vw;
+        text-align: center;
+        padding: 20px;
+      }
+    }
+  }
+}

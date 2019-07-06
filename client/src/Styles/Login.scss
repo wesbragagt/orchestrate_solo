@@ -1,0 +1,51 @@
+@import "./_variables";
+
+.loginPage {
+  display: flex;
+  background-image: url("../Assets/login-background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+	-webkit-backdrop-filter: blur(10px);
+}
+
+.loginFormContainer {
+	flex: 1;
+  background: rgba($darkPrimary, 0.6);
+	border-radius: 16px;
+	overflow: hidden;
+	max-width: 600px;
+	justify-content: center;
+	align-items: center;
+	
+	.logoContainer {
+		background: $darkPrimary;
+		height: 120px;
+		text-align: center;
+		padding: 20px;
+
+		svg {
+			height: 80px;
+		}
+	}
+
+}
+
+.loginForm {
+	padding: 20px 10% 0 10%;
+
+  .formAction {
+    .signup-now {
+			padding-top: 2em;
+			color: white;
+
+			&:hover {
+				text-decoration: underline;
+			}
+    }
+  }
+}

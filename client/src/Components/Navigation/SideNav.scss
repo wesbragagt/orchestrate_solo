@@ -1,0 +1,132 @@
+@import '../../Styles/variables';
+
+.sideNav {
+  flex: 1;
+  max-width: 400px;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  background-color: lighten($darkPrimary, 4);
+  color: white;
+  border-right: solid 1px darken($darkPrimary, 3);
+
+  .logo {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: darken($darkPrimary, 4);
+    border-bottom: solid 1px darken($darkPrimary, 3);
+    margin-bottom: 20px;
+
+    a {
+      padding: 5px;
+      width: calc(100% - 10px);
+      height: calc(100% - 10px);
+
+      svg {
+        margin: 0 auto;
+        max-height: 100%;
+        max-width: 100%;
+      }
+    }
+
+    
+  }
+
+  .navLinks {
+    display: flex;
+    flex-direction: column;
+ 
+    li {
+      display: block;
+      text-align: right;
+      margin-bottom: 20px;
+
+      a {
+        color: $white;
+        display: inline-block;
+        padding: 20px 40px;
+        position: relative;
+        font-size: 1.1em;
+        overflow: hidden;
+        letter-spacing: 1px;
+        text-shadow: 0px 1px 1px rgba($darkPrimary, .6);
+
+        span {
+          position: relative;
+          z-index: 100;
+        }
+
+        &::after {
+          content: '';
+          display: block;
+          z-index: 0;
+          background: $secondary;
+          width: 100%;
+          height: 100%;
+          left: 105%;
+          top: 0;
+          position: absolute;
+          transition: left .25s ease-in-out;
+          border-radius: 32px 0 0 32px;
+        }
+
+        &:hover {
+          color: $secondary;
+        }
+        
+        &.active {
+          &::after {
+            left: 0%;
+          }
+
+          &:hover {
+            color: $white;
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+  &.smallScreen {
+    position: absolute;
+    min-height: 100vh;
+    overflow-y: auto;
+    top: 0;
+    z-index: 0;
+    max-width: 100vw;
+    min-width: 100vw;
+
+    .navLinks {
+      padding-top: 80px;
+
+      li {
+        text-align: left;
+
+        a {
+
+          &::after {
+            left: -105%;
+            border-radius: 0 32px 32px 0;
+          }
+
+          &.active {
+            &::after {
+              left: 0%;
+            }
+          }
+
+        }
+
+        
+      }
+
+    }
+
+  }
+
+}

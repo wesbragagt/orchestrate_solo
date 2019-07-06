@@ -1,0 +1,23 @@
+.finances {
+    font-family: arial, sans-serif;
+    width: auto;
+    padding: 2rem;
+    border: solid tomato 2px;
+
+    header {
+        text-align: center;
+    }
+
+    table {
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 10px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    }
+}

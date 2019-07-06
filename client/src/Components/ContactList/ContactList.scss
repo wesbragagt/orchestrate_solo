@@ -1,0 +1,26 @@
+@import '../../Styles//variables';
+#contacts {
+    font-family: $bodyFontFamily;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#contacts td,
+#contacts th {
+    border: 1px solid $bright;
+    padding: 8px;
+}
+
+#contacts tr:hover {
+    background-color: $secondary;
+}
+
+#contacts th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: $primary;
+    color: white;
+}
+
+
